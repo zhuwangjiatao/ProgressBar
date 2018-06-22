@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProgressBar</string>
+
+
+
+    <string name="publish_require_upload_progress_loading">上传中...</string>
+    <string name="publish_require_upload_progress_complete">发布完成!</string>
+</resources>

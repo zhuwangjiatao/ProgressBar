@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/shape_uploading_dialog_bg"
+       >
+        <TextView
+            android:id="@+id/tv_progress_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:text="60%"
+            android:textColor="#ff4343"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+
+    <com.example.progressbar.UploadProgressBar
+        android:id="@+id/upload_progress"
+        style="@style/UploadProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/layout_bg"
+        android:layout_alignLeft="@id/layout_bg"
+        android:layout_alignRight="@id/layout_bg"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:paddingRight="45dp"
+        android:layout_marginBottom="17.5dp"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/tv_upload_desp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/layout_bg"
+        android:gravity="center"
+        android:text="@string/publish_require_upload_progress_loading"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>
