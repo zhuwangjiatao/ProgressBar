@@ -8,8 +8,6 @@ import android.view.View;
 /**
  * 尺寸相关工具类
  *
- * @author jianglei
- * @version [1.0.0]
  */
 public class SizeUtil {
 
